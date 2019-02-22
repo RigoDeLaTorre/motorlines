@@ -27,3 +27,16 @@ body {
         padding: 0;
     }
 }
+.pull{
+	background:blue;
+}
+
+%message-shared {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+	background:red;
+}
+.primary-rail{
+ @extend %message-shared;
+}
