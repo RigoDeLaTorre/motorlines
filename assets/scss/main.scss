@@ -1,0 +1,29 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Faster+One');
+@import "header";
+@import 'about';
+@import 'lanes';
+@import 'offering';
+@import 'footer';
+
+* {
+	box-sizing: border-box;
+	letter-spacing: 0.5px;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	a {
+		text-decoration: none;
+	}
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    max-height: 100%;
+    padding: 0 2rem;
+    @media only screen and (max-width:767px) {
+        padding: 0;
+    }
+}
