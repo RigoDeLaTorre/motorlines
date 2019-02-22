@@ -1,111 +1,95 @@
 #lanes {
-  // background-image: linear-gradient(
-  //     to right,
-  //     #00143300 0%,
-  //     #fff 35%,
-  //     #ffffff 70%,
-  //     #f9f0f000 100%
-  //   ),
-  //   url(/img/roadlanes.jpg);
-  background-image: linear-gradient(
+	background-image: linear-gradient(
       rgba(255, 255, 255, 0.45),
       rgba(255, 255, 255, 0.45)
     ),
     url(/img/roadlanes.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 10rem 0;
-  @media only screen and (max-width: 767px) {
-    .content-container {
-      flex-direction: column;
-      text-align: center;
-      .lanes {
-        margin: 0 !important;
-        &__title {
-          font-size: 1.7rem !important;
-        }
-        h4 {
-          font-size: 0.9rem !important;
-        }
-
-        .lane-list {
-          justify-content: center;
-          ul {
-            margin-right: 0 !important;
-            margin-left: 2rem;
-            img {
-              width: 15px !important;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1100px) {
-    .content-container {
-      max-width: 100% !important;
-    }
-  }
-
-
-  .content-container {
-    margin: 0 auto;
-    max-width: 70%;
-    padding: 50px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-    .lanes-img {
-      img {
-        max-width: 250px;
-      }
-    }
-    .lanes {
-      margin-right: 5rem;
-      // padding: 50px 100px;
-      color: black;
-      &__title {
-        font-size: 2rem;
-        font-weight: 400;
-        margin-bottom: 0.5rem;
-      }
-      &__subTitle {
-        font-size: 1rem;
-        font-weight:3100;
-        margin-bottom: 3rem;
-      }
-      &__details {
-        font-size:.9rem;
-        font-weight:300;
-        margin-bottom: 2rem;
-      }
-      &__list {
-        display: flex;
-
-        &__ul {
-          margin-right: 2rem;
-          &__li {
-            font-size: 1rem;
-            font-weight: 300;
-            margin-bottom: 2rem;
-            &__group {
-              display: flex;
-              align-items: center;
-              &__image {
-                width: 20px;
-                height: 20px;
-              }
-              &__title {
-                margin-left: 0.5rem;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 10rem 0;
+	@media only screen and (max-width: 767px) {
+		.content-container {
+			flex-direction: column;
+			text-align: center;
+			.lanes {
+				margin: 0 !important;
+				&__title {
+					font-size: 1.7rem !important;
+				}
+			}
+		}
+	}
+	&__list {
+		justify-content: center;
+		&__ul {
+			margin-right: 0 !important;
+			margin-left: 2rem;
+			&__li {
+				&__group {
+					&__image {
+						width: 15px !important;
+					}
+				}
+			}
+		}
+	}
+	&__title {
+		font-size: 0.9rem !important;
+	}
+, @media only screen and (max-width: 1100px) {
+	.content-container {
+		max-width: 100% !important;
+	}
+, .content-container {
+	margin: 0 auto;
+	max-width: 70%;
+	padding: 50px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	.lanes {
+		margin-right: 5rem;
+		color: black;
+		&__states-image-container {
+			max-width: 250px;
+			&__image {
+				max-width: 100%;
+			}
+		}
+	}
+, &__title {
+	font-size: 2rem;
+	font-weight: 400;
+	margin-bottom: 0.5rem;
+, &__subTitle {
+	font-size: 1rem;
+	font-weight: 3100;
+	margin-bottom: 3rem;
+, &__details {
+	font-size: .9rem;
+	font-weight: 300;
+	margin-bottom: 2rem;
+, &__list {
+	display: flex;
+	&__ul {
+		margin-right: 2rem;
+		&__li {
+			font-size: 1rem;
+			font-weight: 300;
+			margin-bottom: 2rem;
+			&__group {
+				display: flex;
+				align-items: center;
+				&__image {
+					width: 20px;
+					height: 20px;
+				}
+			}
+		}
+	}
+	&__title {
+		margin-left: 0.5rem;
+	}
 }
